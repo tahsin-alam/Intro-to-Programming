@@ -239,6 +239,13 @@ sum = sum * x+ a[i];
  }
  // Analysis: only 1 multiplication//
 
-
+// write a function that performs a "right circular shift "  on an array of integers.//
+ void reverse(int*a, int n){
+  for (int i=0; i<n/2;i++){
+  int t=a[i];
+  a[i]= a[n-1-i];
+   a[n+i] =t;
+  }
+ }
 
 
