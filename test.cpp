@@ -10,7 +10,7 @@ using std :: vector;
 using std :: string;
 
 // read integers from stdin and prints their sum//
-#if 0
+
 int main () {
 
  int num;
@@ -218,7 +218,7 @@ int polyEval(const vector <int>&a, int x) // NOTE: degree (f) = v.size()-1//
  }
  return sum;
 }
-#endif
+
 //      2nd method  //
 int polyEval(a,x){
  int sum=0;
