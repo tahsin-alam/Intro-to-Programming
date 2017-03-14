@@ -72,14 +72,46 @@ min = n1; smin = n2;
   return 0;
  }
 
-// program that gives highest powe of 2//
-int n;
- int k =2;
- cin >> n;
- while ( k < 2) {
-  k = k*2;
+/ Given two integer n and k .Find the highest power of k that divides n//
+
+int main() {
+int n,k,original,count=0;
+cout << "enter a number" << endl;
+cin >> n;
+cout << "enter a divider" << endl;
+cin >> k;
+original =k;
+ while (n%k==0|| n%k!=0) //NOTE: AT this point it will run infinitely, press ctrl-C to stop the program//
+ {
+  if ( n/k >=1 && k!=1)
+  {
+   count ++;
+   k = k*original;
+  }
+if ( n%k==0 || n%k !=0) {
+
+ }
+  cout << "largest power is" << count << endl;
  }
 return 0;
+}
+
+
+// The highest power of any even numbers //
+int main() {
+ int n, k;
+ cout<< "enter a number"<< endl;
+ cin>> n;
+ cout << "enter a divider" << endl;
+ cin >> k;
+ int l=0;
+ while( n%k ==0){
+  l++;
+ n =n/k;
+}
+cout << "largest power is"<< l << endl;
+return 0;
+}
 
 
 // write programs that gives u the fist three  nth odd cubes//
@@ -239,7 +271,8 @@ sum = sum * x+ a[i];
  }
  // Analysis: only 1 multiplication//
 
-// write a function that performs a "right circular shift "  on an array of integers.//
+
+/ write a function that performs a "right circular shift "  on an array of integers.//
  void reverse(int*a, int n){
   for (int i=0; i<n/2;i++){
   int t=a[i];
@@ -249,3 +282,28 @@ sum = sum * x+ a[i];
  }
 
 
+
+/TODO: write a function that takes two strings and returns an integer value
+ * indicating whether or not the first was a substring of second one //
+
+int main() {
+ string s1,s2;
+ cout << "Enter the first string";
+ cin >> s1;
+ cout << "Enter the substring to serach";
+ cin >> s2;
+ int n1 = s1. length();
+ int n2 = s2. length();
+ for ( int i=0; i< n1-n2; i++){
+  for( int j=0; j<n2; j++){
+   if( s1[i+j] != s2[j])
+   {
+    break;
+   }
+   if(j==n2)
+    cout<< "the substring found at" << i << endl;
+  }
+  }
+ cout<< "-1" <<endl;
+  return 0;
+ }
