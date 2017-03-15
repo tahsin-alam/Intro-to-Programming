@@ -189,11 +189,11 @@ else
 return 0;
 }
 
-// write functions that prints integers in reverse order using vector//
+ *TODO : write functions that prints integers in reverse order using vector
+
 void print_elem(int elem){
  cout << elem << endl;
 }
-
 int main () {
  int ia[4] ={1,2,3,4};
  vector<int> v(ia,ia+4);
@@ -201,33 +201,38 @@ int main () {
 
   return 0;
 }
-
+// This runs nicely with no errror//
 
 //METHOD 2//
-void Printvec(const <int>& );
-void Reverse (const <int>&);
-int main () {
- vector<int> myvector;
- Printvec(myvector);
- Reverse (myvector);
- return 0;
-}
-void Printvec( const <int>& Newvec) {
- cout << "Vector : " ;
- int input;
- cin >> input;
- Newvec.pushback[i];
- for( int i =0; i<Newvec.size(); i++) {
-   cout<< Newvec[i];
-   cout<< Newvec[i];
-}
+int n;
+vector<int> v;
+ while(cin >> n) {
+v.pushback(n);
  }
-  void Reverse ( const <int>& Newvec) {
-   cout << "Reverse Vector : ";
-   for( int i = Newvec.size()-1; i>=0; i--) {
-    cout<< Newvec[i];
-   }
-  }
+for( int i= v.size()-1; i>=0;i--)
+ cout<<v[i]<<"\n";
+// Virtual Machine gives error but good to write 0n the exam .PRovided by Skeith//
+
+
+
+*TODO : write a binary search on a sorted vector . returns true if integer appears on the vector.
+
+bool bserach(
+const vector<int>&v, int x){
+ int left =0,right= v.size ()-1;
+int mid;
+ while(left<=right){
+  mid = (left + right)/2;
+  if (v[mid]==x)
+   return true;
+  else if( v[mid]<x)
+   left = mid+1;
+  else
+   right =mid-1;
+ }
+ return false;
+}
+
 // TODO:  write a function that takes a string and a character and returns the number of occurences of the character in the string.//
 size_t countChars ( const string&s , char c)
 {
