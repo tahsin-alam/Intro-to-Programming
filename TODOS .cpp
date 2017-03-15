@@ -219,7 +219,15 @@ void Printvec( const <int>& Newvec) {
  Newvec.pushback[i];
  for( int i =0; i<Newvec.size(); i++) {
    cout<< Newvec[i];
-
+   cout<< Newvec[i];
+}
+ }
+  void Reverse ( const <int>& Newvec) {
+   cout << "Reverse Vector : ";
+   for( int i = Newvec.size()-1; i>=0; i--) {
+    cout<< Newvec[i];
+   }
+  }
 // TODO:  write a function that takes a string and a character and returns the number of occurences of the character in the string.//
 size_t countChars ( const string&s , char c)
 {
