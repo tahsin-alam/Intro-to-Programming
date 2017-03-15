@@ -199,10 +199,26 @@ int main () {
  vector<int> v(ia,ia+4);
  for_each(v.rbegin(), v.rend(), print_elem);
 
-
-
   return 0;
 }
+
+
+//METHOD 2//
+void Printvec(const <int>& );
+void Reverse (const <int>&);
+int main () {
+ vector<int> myvector;
+ Printvec(myvector);
+ Reverse (myvector);
+ return 0;
+}
+void Printvec( const <int>& Newvec) {
+ cout << "Vector : " ;
+ int input;
+ cin >> input;
+ Newvec.pushback[i];
+ for( int i =0; i<Newvec.size(); i++) {
+   cout<< Newvec[i];
 
 // TODO:  write a function that takes a string and a character and returns the number of occurences of the character in the string.//
 size_t countChars ( const string&s , char c)
