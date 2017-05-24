@@ -10,7 +10,7 @@ using std:: map;
 using std:: cout;
 using std:: cin;
 using std:: endl;
-#if 0
+
 //TODO:  write a recursive function that prints the base 10 digits of n vertically to cout.//
 void printvertical(unsigned long n)
 {
@@ -114,7 +114,7 @@ cout << "  {";
 	cout << "},\n";
 	return 0;
 }
-#endif
+
 * //TODO: write a function to compute all *k-subsets* of a given set.
  * //Recall that k-subsets are subsets with *precisely* k elements.//
 
